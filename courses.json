@@ -1,0 +1,93 @@
+[
+    {
+      "id": 1,
+      "subject": "Painting and Drawing",
+      "location": "Oxford",
+      "price": 100,
+      "spaces": 10,
+      "rating": 3.75,
+      "image": "images/painting.jpg"
+    },
+    {
+      "id": 2,
+      "subject": "Yoga and Pilates",
+      "location": "Oxford",
+      "price": 100,
+      "spaces": 10,
+      "rating": 3.75,
+      "image": "images/yoga.jpg"
+    },
+    {
+      "id": 3,
+      "subject": "Sculpting",
+      "location": "York",
+      "price": 80,
+      "spaces": 10,
+      "rating": 4.75,
+      "image": "images/sculpting.jpg"
+    },
+    {
+      "id": 4,
+      "subject": "Crafting",
+      "location": "Bristol",
+      "price": 90,
+      "spaces": 10,
+      "rating": 4.75,
+      "image": "images/crafting.jpg"
+    },
+    {
+      "id": 5,
+      "subject": "Photography",
+      "location": "Manchester",
+      "price": 40,
+      "spaces": 10,
+      "rating": 2.75,
+      "image": "images/photography.jpg"
+    },
+    {
+      "id": 6,
+      "subject": "Fashion Design",
+      "location": "London",
+      "price": 50,
+      "spaces": 10,
+      "rating": 3.5,
+      "image": "images/fashion.jpg"
+    },
+    {
+      "id": 7,
+      "subject": "Football",
+      "location": "Manchester",
+      "price": 60,
+      "spaces": 15,
+      "rating": 4.0,
+      "image": "images/football.jpg"
+    },
+    {
+      "id": 8,
+      "subject": "Basketball",
+      "location": "Bristol",
+      "price": 70,
+      "spaces": 12,
+      "rating": 4.2,
+      "image": "images/basketball.jpg"
+    },
+    {
+      "id": 9,
+      "subject": "Tennis",
+      "location": "London",
+      "price": 30,
+      "spaces": 8,
+      "rating": 3.0,
+      "image": "images/tennis.jpg"
+    },
+    {
+      "id": 10,
+      "subject": "Badminton",
+      "location": "York",
+      "price": 35,
+      "spaces": 5,
+      "rating": 2.5,
+      "image": "images/badminton.jpg"
+    }
+  ]
+  

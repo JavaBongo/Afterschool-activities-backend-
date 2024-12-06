@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch POST Example</title>
+</head>
+
+<body>
+    <h1>Add a New Course</h1>
+    <form id="courseForm">
+        <label>
+            Subject:
+            <input type="text" id="subject" name="subject" required>
+        </label>
+        <br>
+        <label>
+            Location:
+            <input type="text" id="location" name="location" required>
+        </label>
+        <br>
+        <label>
+            Price:
+            <input type="number" id="price" name="price" required>
+        </label>
+        <br>
+        <label>
+            Spaces:
+            <input type="number" id="spaces" name="spaces" required>
+        </label>
+        <br>
+        <button type="submit">Add Course</button>
+    </form>
+
+    <p>The response: <span id="response"></span></p>
+    <p>Error: <span id="error"></span></p>
+
+    <script>
+        const form = document.getElementById('courseForm');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const newCourse = {
+                subject: document.getElementById('subject').value,
+                location: document.getElementById('location').value,
+                price: parseFloat(document.getElementById('price').value),
+                spaces: parseInt(document.getElementById('spaces').value),
+            };
+
+            fetch('http://localhost:3000/api/courses', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(newCourse),
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    document.getElementById('response').innerText = JSON.stringify(data);
+                })
+                .catch((error) => {
+                    document.getElementById('error').innerText = error.message;
+                });
+        });
+    </script>
+</body>
+
+</html>
